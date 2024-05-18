@@ -1,0 +1,127 @@
+*, *::before, *::after {
+    box-sizing: border-box;
+}
+
+body {
+    color: #151515;
+    font-family: 'Source Sans Pro', sans-serif;
+    background-color: #FAFAFA;
+    margin: 0;
+}
+
+.container {
+    width: 90%;
+    max-width: 900px;
+    padding-top: 1.5em;
+    margin: 0 auto;
+}
+
+article {
+    margin-bottom: 1em;
+}
+
+
+img  {
+    width: 100%;
+}
+
+.article-info {
+    text-transform: uppercase;
+}
+
+.article-img {
+    margin-bottom: 1em;
+}
+
+.article-title {
+    font-size: 1.5rem;
+    margin: 0.5em 0 0.35em 0;
+}
+
+.article-preview {
+    margin-top: 0;
+}
+
+p {
+    line-height: 1.3;
+}
+
+/* MEDIA QUERIES */
+
+
+@media (min-width: 480px)  {
+    .posts {
+        display: flex;
+        justify-content: space-between;
+        flex-wrap: wrap;
+        gap: 1em;  
+    }
+    .posts article {
+        flex: 1 220px;
+    }    
+}
+
+
+@media (min-width: 768px) {
+    .posts article {
+        flex-basis: 250px;  
+    }    
+}
+
+.icons-bar{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    gap: 10px;
+    padding: 10px;
+    width: 250px;
+    margin: 0 auto;
+}
+
+/* to take */
+
+
+.banner {
+    padding: 50px;
+}
+
+.banner h1 {
+    font-size: 2em;
+}
+
+.banner p {
+    font-size: 1em;
+    margin-top: 20px;
+}
+
+.date {
+    
+    margin-top: 20px;
+}
+.header {
+    background-image: url("https://th.bing.com/th/id/OIP.ADSzpUHSA9X5QL-9z3rrBgAAAA?pid=ImgDet&w=198&h=132&c=7&dpr=1.3"); 
+    background-size: cover;
+    background-position: center;
+    color: white;
+}
+
+.logo {
+    font-size: 1.5em;
+}
+
+.menu a {
+    margin-left: 20px;
+    color: black;
+    cursor: pointer;
+    
+}
+.navsection p{
+    margin-top: 20px;
+}
+.navsection{
+    display: flex;
+    justify-content: space-between;
+    
+    padding: 20px;
+    gap: 1em;
+}
